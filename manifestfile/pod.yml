@@ -13,3 +13,4 @@ spec:
       image: ayyappaad/dj:cjpnewspaper
       ports:
         - containerPort: 80
+
