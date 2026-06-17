@@ -1,9 +1,0 @@
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: mysec2
-data:
-  username: YWRtaW4=
-  password: dG9tY2F0QDEyMw==
-
