@@ -6,11 +6,11 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: stm
+    app: stockmarket
   template:
     metadata:
       labels:
-        app: stm
+        app: stockmarket
     spec:
       containers:
         - name: cont2
@@ -20,3 +20,15 @@ spec:
 
 
 ---
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysvc5
+spec:
+  type: LoadBalancer
+  selector:
+    app: stockmarket
+  ports:
+    - port: 80
+      targetPort: 80
